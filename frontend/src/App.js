@@ -50,7 +50,7 @@ function App() {
   return (
     <BrowserRouter>
 
-      <Route path = "/"><Home/></Route>
+      <Route path = "/"><CusNavigation/></Route>
 
       {/* User Login and Reg*/}
       <Route path = "/cuslogin"><CusLogin/></Route>
