@@ -82,7 +82,7 @@ export default function CusReg() {
             <div class="container-fluid h-custom">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-md-9 col-lg-6 col-xl-5">
-                        <img src="https://www.linkpicture.com/q/hotel_staff_05.jpg"
+                        <img src="https://images.unsplash.com/photo-1734588561756-5057e32c1f0e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             class="img-fluid" alt="Sample image" />
                     </div>
                     <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
