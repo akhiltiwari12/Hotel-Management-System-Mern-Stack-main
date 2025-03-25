@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server",
+    "start": "node server.js",
     "server": "nodemon server",
     "client": "npm run starnpm run start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"cd ../frontend && npm start\""
