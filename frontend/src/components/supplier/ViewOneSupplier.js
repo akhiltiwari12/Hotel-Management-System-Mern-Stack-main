@@ -36,7 +36,7 @@ export default function ViewOneSupplier() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get(`http://localhost:5000/supplier/${id}`)).data.data
+                const result = await (await axios.get(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/supplier/${id}`)).data.data
 
                 setsupid(result[0].supid); 
                 setsupname(result[0].supname);

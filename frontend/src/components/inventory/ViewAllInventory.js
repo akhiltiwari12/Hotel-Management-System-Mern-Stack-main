@@ -25,7 +25,7 @@ export default function ViewAllInventory() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get("http://localhost:5000/inventory/")).data.data
+                const result = await (await axios.get("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/inventory/")).data.data
                 setAllInventory(result);
                 setLoaderStatus(true)
                 setTableStatus(false)

@@ -57,7 +57,7 @@ export default function AddPaidSalary() {
                     paymentid, emplid, email, accountnumber, basicsalary, totalsalary, paiddate
                 }
 
-                const data = (await axios.post("http://localhost:5000/paidsalaries/", newDetails)).status
+                const data = (await axios.post("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/paidsalaries/", newDetails)).status
                 if (data === 200) {
                     SoloAlert.alert({
                         title: "Welcome!",

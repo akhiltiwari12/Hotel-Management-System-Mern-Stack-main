@@ -29,7 +29,7 @@ export default function ViewAllEmp() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get("http://localhost:5000/employees//")).data.data
+                const result = await (await axios.get("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/employees//")).data.data
                 setAllEmp(result);
                 setLoaderStatus(true)
                 setTableStatus(false)

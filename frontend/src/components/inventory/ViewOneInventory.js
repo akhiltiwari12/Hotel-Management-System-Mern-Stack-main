@@ -36,7 +36,7 @@ export default function ViewOneInventory() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get(`http://localhost:5000/inventory/${id}`)).data.data
+                const result = await (await axios.get(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/inventory/${id}`)).data.data
                 setitemid(result[0].itemid);
                 setitemname(result[0].itemname)
                 setitemmodel(result[0].itemmodel);
@@ -66,7 +66,7 @@ export default function ViewOneInventory() {
             const newDetails = {
                 itemid, itemname, itemmodel, itemcategory, restocklevel, supplier, quantity, unitprice, itemdate
             }
-            const data = await (await axios.put(`http://localhost:5000/inventory/${id}`, newDetails)).status
+            const data = await (await axios.put(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/inventory/${id}`, newDetails)).status
             if (data === 200) {
                 SoloAlert.alert({
                     title: "Welcome!",
@@ -124,7 +124,7 @@ export default function ViewOneInventory() {
             onOk: async function () {
 
                 try {
-                    const result = await (await axios.delete(`http://localhost:5000/inventory/${id}`)).status
+                    const result = await (await axios.delete(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/inventory/${id}`)).status
                     console.log(result)
 
                     if (result === 200) {

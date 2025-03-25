@@ -36,7 +36,7 @@ export default function ViewOneRoom() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get(`http://localhost:5000/room/${id}`)).data.data
+                const result = await (await axios.get(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/room/${id}`)).data.data
                 setRoomname(result[0].roomname);
                 setnoOfguests(result[0].noOfguests)
                 setRoomtype(result[0].roomtype);

@@ -27,7 +27,7 @@ export default function ViewAllSuppliers() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get("http://localhost:5000/supplier//")).data.data
+                const result = await (await axios.get("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/supplier//")).data.data
                 setAllSuppliers(result);
                 setLoaderStatus(true)
                 setTableStatus(false)

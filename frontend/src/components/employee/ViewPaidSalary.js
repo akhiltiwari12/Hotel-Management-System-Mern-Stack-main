@@ -25,7 +25,7 @@ export default function ViewAllPaidSalaries() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get("http://localhost:5000/paidsalaries")).data
+                const result = await (await axios.get("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/paidsalaries")).data
                 setAllPaidSalaries(result);
                 setLoaderStatus(true)
                 setTableStatus(false)

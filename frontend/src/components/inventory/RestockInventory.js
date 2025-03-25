@@ -17,7 +17,7 @@ export default function RestockInventory() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get("http://localhost:5000/inventory/")).data.data
+                const result = await (await axios.get("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/inventory/")).data.data
                 console.log(result)
                 setAllInventory(result);
                 setLoaderStatus(true)
@@ -43,7 +43,7 @@ export default function RestockInventory() {
                 quantity
             }
 
-            const data = await (await axios.put(`http://localhost:5000/inventory/restock/${dat._id}`, newDetails)).status
+            const data = await (await axios.put(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/inventory/restock/${dat._id}`, newDetails)).status
             if (data === 200) {
                 SoloAlert.alert({
                     title: "Welcome!",

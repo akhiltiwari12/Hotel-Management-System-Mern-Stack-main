@@ -25,7 +25,7 @@ export default function ViewAllRooms() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get("http://localhost:5000/room/")).data.data
+                const result = await (await axios.get("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/room/")).data.data
                 setAllRooms(result);
                 setLoaderStatus(true)
                 setTableStatus(false)

@@ -17,7 +17,7 @@ export default function CusLogin() {
         setLoading(true)
         try {
             const loginDetails = { cusemail, password }
-            const data = (await axios.post("http://localhost:5000/customer/login", loginDetails)).data
+            const data = (await axios.post("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/customer/login", loginDetails)).data
             console.log(data)
             if(data.status.role === 'customer'){
                 window.location = '/rooms'

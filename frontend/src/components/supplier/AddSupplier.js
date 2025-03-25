@@ -41,7 +41,7 @@ export default function AddSupplier() {
                    supid ,supname, email, contactnumber, nic, category , companyname , companyaddress
                 }
                 
-    const data =  (await axios.post("http://localhost:5000/supplier", newDetails)).status
+    const data =  (await axios.post("https://hotel-management-system-mern-stack-main-b8g6.vercel.app/supplier", newDetails)).status
                 if (data === 200) {
                     SoloAlert.alert({
                         title: "Welcome!",

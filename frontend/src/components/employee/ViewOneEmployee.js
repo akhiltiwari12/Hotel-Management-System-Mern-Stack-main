@@ -37,7 +37,7 @@ export default function ViewOneEmployee() {
     useEffect(() => {
         async function getDetails() {
             try {
-                const result = await (await axios.get(`http://localhost:5000/employees/${id}`)).data.data
+                const result = await (await axios.get(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/employees/${id}`)).data.data
                 setempid(result[0].empid);
                 setfirstname(result[0].firstname);
                 setlastname(result[0].lastname);
@@ -68,7 +68,7 @@ export default function ViewOneEmployee() {
             const newDetails = {
                 empid, firstname, lastname, emptype, nic, mobile, bank, branch
             }
-            const data = await (await axios.put(`http://localhost:5000/employees/${id}`, newDetails)).status
+            const data = await (await axios.put(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/employees/${id}`, newDetails)).status
             if (data === 200) {
                 SoloAlert.alert({
                     title: "Welcome!",
@@ -126,7 +126,7 @@ export default function ViewOneEmployee() {
             onOk: async function () {
 
                 try {
-                    const result = await (await axios.delete(`http://localhost:5000/employees/${id}`)).status
+                    const result = await (await axios.delete(`https://hotel-management-system-mern-stack-main-b8g6.vercel.app/employees/${id}`)).status
                     console.log(result)
 
                     if (result === 200) {
