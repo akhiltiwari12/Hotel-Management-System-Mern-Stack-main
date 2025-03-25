@@ -40,7 +40,7 @@ mongoose
 app.use("/room", require("./routes/employee-manager/RoomRoute.js"));
 
 //Supplier management routes
-app.use("/supplier", require("./routes/supplier-manager/SupplierRoute.js"));
+app.use("/supplier", require("./routes/supplier-manager/supplierRoute.js"));
 
 //Supplier history routes
 app.use("/supplierhistory", require("./routes/supplier-manager/supplierhistoryRoute.js"));
@@ -54,7 +54,7 @@ const adminloginRouter = require('./routes/adminlogin.js');
 app.use('/adminlogin',adminloginRouter);
 
 //Inventory Manager Routes
-app.use("/inventory", require("./routes/inventory-manager/InventoryRoute.js"));
+app.use("/inventory", require("./routes/inventory-manager/inventoryRoute.js"));
 
 
 //Customer Routes
