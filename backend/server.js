@@ -37,13 +37,13 @@ mongoose
 /*---------------------------------------Create Routes-------------------------------------------*/
 
 //Room management routes
-app.use("/room", require("./routes/employee-manager/RoomRoute"));
+app.use("/room", require("./routes/employee-manager/RoomRoute.js"));
 
 //Supplier management routes
-app.use("/supplier", require("./routes/supplier-manager/SupplierRoute"));
+app.use("/supplier", require("./routes/supplier-manager/SupplierRoute.js"));
 
 //Supplier history routes
-app.use("/supplierhistory", require("./routes/supplier-manager/supplierhistoryRoute"));
+app.use("/supplierhistory", require("./routes/supplier-manager/supplierhistoryRoute.js"));
 
 //api for employee managemet Thilan
 const employeesRouter = require('./routes/emp-manager/employees.js');
@@ -54,14 +54,14 @@ const adminloginRouter = require('./routes/adminlogin.js');
 app.use('/adminlogin',adminloginRouter);
 
 //Inventory Manager Routes
-app.use("/inventory", require("./routes/inventory-manager/InventoryRoute"));
+app.use("/inventory", require("./routes/inventory-manager/InventoryRoute.js"));
 
 
 //Customer Routes
- app.use("/customer", require("./routes/customer/customerRoute"));
+ app.use("/customer", require("./routes/customer/customerRoute.js"));
 
 //Room booking Routes
-app.use("/booking", require("./routes/room-booking/bookingRoute"));
+app.use("/booking", require("./routes/room-booking/bookingRoute.js"));
 
 
 
