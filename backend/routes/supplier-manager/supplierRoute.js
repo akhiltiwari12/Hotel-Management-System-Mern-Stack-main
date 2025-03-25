@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Supplier = require("../../models/supplier-manager/supplierModel");
+const Supplier = require("../../models/supplier-manager/suppliermodel");
 
 //Add new supplier
 router.post('/',async(req,res)=>{
